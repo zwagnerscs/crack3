@@ -5,7 +5,7 @@
 #include "md5.h"
 #include "bintree.h"
 
-const int PASS_LEN=20;        // Maximum any password can be
+const int PASS_LEN=50;        // Maximum any password can be
 const int HASH_LEN=33;        // Length of MD5 hash strings
 
 // Given a hash and a plaintext guess, return 1 if
