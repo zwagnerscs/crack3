@@ -26,6 +26,7 @@ void print(node *leaf)
 	if (leaf->right != NULL) print(leaf->right);
 }
 
+// TODO: Modify so the key is the hash to search for
 node *search(int key, node *leaf)
 {
   if (leaf != NULL)

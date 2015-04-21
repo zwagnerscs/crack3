@@ -1,3 +1,5 @@
+// TODO: modify the struct so it holds both the plaintext
+// word and the hash.
 typedef struct node {
 	int data;
 	struct node *left;

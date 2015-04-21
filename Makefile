@@ -17,11 +17,11 @@ md5.o: md5.c md5.h
 hashpass.o: hashpass.c md5.h
 	clang -g -c hashpass.c -Wall
 
-# Write a rule to compile bintree.o out of bintree.c
+# TODO: Write a rule to compile bintree.o out of bintree.c
 bintree.o: bintree.c bintree.h
 
 
-# Your crack program will need to use a binary tree, so
+# TODO: Your crack program will need to use a binary tree, so
 # add it to the dependecies and receipe below.
 crack: crack.o md5.o
 	clang -g -c crack.o md5.o -o crack -l ssl -l crypto

@@ -22,6 +22,7 @@ int tryguess(char *hash, char *guess)
     return 0;
 }
 
+// TODO
 // Read in the hash file and return the array of strings.
 // Use the technique we showed in class to expand the
 // array as you go.
@@ -31,6 +32,7 @@ char **read_hashes(char *filename)
 }
 
 
+// TODO
 // Read in the dictionary file and return the tree.
 // Each node should contain both the hash and the
 // plaintext word.
@@ -48,12 +50,13 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
-    // Read the hash file into an array of strings
+    // TODO: Read the hash file into an array of strings
     char **hashes = read_hashes(fill this in);
 
-    // Read the dictionary file into a binary tree
+    // TODO: Read the dictionary file into a binary tree
     node *dict = read_dict(fill this in);
 
+    // TODO
     // For each hash, search for it in the binary tree.
     // If you find it, get the corresponding plaintext dictionary
     // entry. Print both the hash and word out.
