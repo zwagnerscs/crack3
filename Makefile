@@ -24,7 +24,7 @@ bintree.o: bintree.c bintree.h
 # TODO: Your crack program will need to use a binary tree, so
 # add it to the dependecies and receipe below.
 crack: crack.o md5.o
-	clang -g -c crack.o md5.o -o crack -l ssl -l crypto
+	clang crack.o md5.o -o crack -l ssl -l crypto
 
 crack.o: crack.c md5.h
 	clang -g -c crack.c -Wall
