@@ -3,7 +3,7 @@
 #include <string.h>
 
 #include "md5.h"
-#include "bintree.h"
+#include "binsearch.h"
 
 const int PASS_LEN=50;        // Maximum any password can be
 const int HASH_LEN=33;        // Length of MD5 hash strings
@@ -33,10 +33,10 @@ char **read_hashes(char *filename)
 
 
 // TODO
-// Read in the dictionary file and return the tree.
-// Each node should contain both the hash and the
-// plaintext word.
-node *read_dict(char *filename)
+// Read in the dictionary file and return the data structure.
+// Each entry should contain both the hash and the dictionary
+// word.
+char **read_dict(char *filename)
 {
     return NULL;
 }
@@ -53,11 +53,16 @@ int main(int argc, char *argv[])
     // TODO: Read the hash file into an array of strings
     char **hashes = read_hashes(fill this in);
 
-    // TODO: Read the dictionary file into a binary tree
-    node *dict = read_dict(fill this in);
+    // TODO: Read the dictionary file into an array of strings
+    char **dict = read_dict(fill this in);
+    
+    // TODO: Sort the hashed dictionary using qsort.
+    // You will need to provide a comparison function.
+    qsort(dict, ___, ___, ___);
 
     // TODO
-    // For each hash, search for it in the binary tree.
+    // For each hash, search for it in the dictionary using
+    // binary search.
     // If you find it, get the corresponding plaintext dictionary
     // entry. Print both the hash and word out.
     // Need only one loop. (Yay!)
