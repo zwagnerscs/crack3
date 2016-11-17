@@ -24,8 +24,6 @@ int tryguess(char *hash, char *guess)
 
 // TODO
 // Read in the hash file and return the array of strings.
-// Use the technique we showed in class to expand the
-// array as you go.
 char **read_hashes(char *filename)
 {
     return NULL;
@@ -51,10 +49,10 @@ int main(int argc, char *argv[])
     }
 
     // TODO: Read the hash file into an array of strings
-    char **hashes = read_hashes(fill this in);
+    char **hashes = read_hashes(FILL_THIS_IN);
 
     // TODO: Read the dictionary file into an array of strings
-    char **dict = read_dict(fill this in);
+    char **dict = read_dict(FILL_THIS_IN);
     
     // TODO: Sort the hashed dictionary using qsort.
     // You will need to provide a comparison function.
