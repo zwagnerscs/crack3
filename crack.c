@@ -3,7 +3,6 @@
 #include <string.h>
 
 #include "md5.h"
-#include "binsearch.h"
 
 const int PASS_LEN=50;        // Maximum any password can be
 const int HASH_LEN=33;        // Length of MD5 hash strings
