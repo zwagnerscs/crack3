@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include "md5.h"
-#include "sha256.h"
 
 int main()
 {
