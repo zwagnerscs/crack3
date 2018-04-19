@@ -28,10 +28,10 @@ int tryguess(char *hash, char *guess)
 
 
 // TODO
-// Read in the dictionary file and return the data structure.
+// Read in the dictionary file and return an array of structs.
 // Each entry should contain both the hash and the dictionary
 // word.
-struct entry **read_dictionary(char *filename, int *size)
+struct entry *read_dictionary(char *filename, int *size)
 {
     *size = 0;
     return NULL;
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
     }
 
     // TODO: Read the dictionary file into an array of entry structures
-    struct entry **dict = read_dictionary(NULL, NULL);
+    struct entry *dict = read_dictionary(NULL, NULL);
     
     // TODO: Sort the hashed dictionary using qsort.
     // You will need to provide a comparison function.
