@@ -7,24 +7,13 @@
 const int PASS_LEN=50;        // Maximum any password can be
 const int HASH_LEN=33;        // Length of MD5 hash strings
 
+
+// Stucture to hold both a plaintext password and a hash.
 struct entry 
 {
-    // FILL THIS IN
+    // TODO: FILL THIS IN
 };
 
-// Given a hash and a plaintext guess, return 1 if
-// the hash of the guess matches the given hash.
-// That is, return 1 if the guess is correct.
-int tryguess(char *hash, char *guess)
-{
-    // Hash the guess using MD5
-
-    // Compare the two hashes
-
-    // Free any malloc'd memory
-
-    return 0;
-}
 
 
 // TODO
@@ -54,9 +43,12 @@ int main(int argc, char *argv[])
     qsort(dict, 0, 0, NULL);
 
     // TODO
+    // Open the hash file for reading.
+
+    // TODO
     // For each hash, search for it in the dictionary using
     // binary search.
-    // If you find it, get the corresponding plaintext dictionary
-    // entry. Print both the hash and word out.
+    // If you find it, get the corresponding plaintext dictionary word.
+    // Print out both the hash and word.
     // Need only one loop. (Yay!)
 }
